@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- IE required polyfills, in this exact order -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.25/system-polyfills.js"></script>
+  <script src="https://npmcdn.com/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+  <!-- Angular polyfill required everywhere -->
+  <script src="https://code.angularjs.org/2.0.0-beta.13/angular2-polyfills.js"></script>
+
+  <script src="https://code.angularjs.org/tools/system.js"></script>
+  <script src="https://code.angularjs.org/tools/typescript.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.13/Rx.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.13/angular2.dev.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.13/router.dev.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.13/http.dev.js"></script>
+
+  <!-- Essential Studio for JavaScript  theme reference -->
+   <link href="css/ej.widgets.all.min.css" rel="stylesheet" />
+   <link href="css/ej.theme.min.css" rel="stylesheet" />
+
+  <script src="./js/jquery-1.9.1.min.js"></script>
+  <script src="./js/jquery.easing.min.js"></script>
+  <script src="./js/jquery.globalize.min.js"></script>
+  <script src="./js/jsrender.min.js"></script>
+  <script src="./js/ej.web.all.min.js"></script>
+
+
+  <script>
+      System.config({
+        transpiler: 'typescript', 
+        typescriptOptions: { emitDecoratorMetadata: true }, 
+        packages: {
+          'api': {defaultExtension: 'ts'}, 
+          'app': {defaultExtension: 'ts'} 
+        } 
+      });
+    System.import('app/main')
+          .then(null, console.error.bind(console));
+  </script>
+
+</head>
+
+<body>
+  <my-character>Loading test ...</my-character>
+</body>
+
+</html>
