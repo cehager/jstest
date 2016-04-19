@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="997c4a4e-2241-4ffe-9ce3-ea60749265e1" name="account1@accountingcentral.com" url="http://account1@accountingcentral.com">
+        <fileTransfer host="account1@accountingcentral.com" port="21" username="account1">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

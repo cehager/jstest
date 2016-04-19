@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="account1@accountingcentral.com" uploadOnCheckin="997c4a4e-2241-4ffe-9ce3-ea60749265e1">
+    <serverData>
+      <paths name="account1@accountingcentral.com">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="account1@accountingcentral.com" />
+  </component>
+</project>
